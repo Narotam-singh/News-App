@@ -32,7 +32,13 @@ The .apk file made on building the project will require an Android device/emulat
 
 - News based on a particular category
 
-  ![Screenshot_20210902_215227](https://user-images.githubusercontent.com/75535031/131889228-b132975d-480d-45b7-8a98-1d3c18de9c40.jpg)
+  ![Screenshot_20210903_204750](https://user-images.githubusercontent.com/75535031/132029928-63cac07f-6096-454e-85fe-3f425590624b.jpg)
+  
+  
+- Search View
+
+  ![Screenshot_20210903_204818](https://user-images.githubusercontent.com/75535031/132029820-75c5869c-70a3-4d4f-8652-eabebe142c60.jpg)
+  
 - Logout Button
 
   ![Screenshot_20210902_215232](https://user-images.githubusercontent.com/75535031/131888992-6d1242d2-82b4-4dd4-a6e8-064bee29257c.jpg)
