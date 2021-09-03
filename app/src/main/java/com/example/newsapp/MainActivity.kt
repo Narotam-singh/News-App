@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.browser.customtabs.CustomTabsIntent
@@ -45,6 +46,7 @@ class MainActivity : AppCompatActivity(), NewsItemClicked, CategoryItemClicked {
 
 
         val recyclerView:RecyclerView=findViewById(R.id.recyclerView)
+
         recyclerView.layoutManager=LinearLayoutManager(this)
         Toast.makeText(this,"Showing News Related To General",Toast.LENGTH_SHORT).show()
         fetchData("https://saurav.tech/NewsAPI/top-headlines/category/general/in.json")
@@ -87,6 +89,20 @@ class MainActivity : AppCompatActivity(), NewsItemClicked, CategoryItemClicked {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.nav_menu,menu)
+        val menuItem=menu!!.findItem(R.id.nav_search)
+        val searchView= menuItem.actionView as androidx.appcompat.widget.SearchView
+        searchView.maxWidth=Int.MAX_VALUE
+        searchView.setOnQueryTextListener(object:androidx.appcompat.widget.SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                mAdapter.filter.filter(query)
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                mAdapter.filter.filter(newText)
+                return true
+            }
+        })
         return super.onCreateOptionsMenu(menu)
     }
 

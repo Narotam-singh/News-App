@@ -15,7 +15,7 @@ Clone the repository on your device and build the project using Android Studio.
 
 
 ## Testing
-The .apk file made on building the project will require an Android device/emulator with Android version being 5.0 or higher.
+The .apk file made on building the project will require an Android device/emulator with Android version being 5.1 or higher.
 
 
 ## ScreenShots
@@ -57,5 +57,6 @@ The .apk file made on building the project will require an Android device/emulat
     - [x] Sports
     - [x] Technology
 - Swipe left or right to delete any News
+- SearchView to filter News
   
   
