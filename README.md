@@ -64,5 +64,6 @@ The .apk file made on building the project will require an Android device/emulat
     - [x] Technology
 - Swipe left or right to delete any News
 - SearchView to filter News
+- News opens in a chrome custom tab after clicking on it
   
   
